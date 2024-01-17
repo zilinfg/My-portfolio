@@ -1,34 +1,36 @@
-import React from "react"
-import Image from "next/image"
-import Link from "next/link"
-import SlideUp from "./SlideUp"
-import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import SlideUp from "./SlideUp";
+import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 
 const projects = [
   {
-    name: "Thankful Thoughts",
+    name: "Wild Oasis",
     description:
-      "ThankfulThoughts is a web app that generates an appreciative sentence of something or someone you are thankful for.",
-    image: "/thankfulthoughts.png",
-    github: "https://github.com/hqasmei/thankful-thoughts",
-    link: "https://thankfulthoughts.io/",
+      "Wild Oasis is a fullstack hotel management application built using React and Supabase.",
+    image: "/wild-oasis.png",
+    github: "https://github.com/zilinfg/the-wild-oasis",
+    link: "https://wild-oasis-hotel-app-zilin.netlify.app",
   },
   {
-    name: "PlatoIO",
-    description: "PlatoIO is a to do list app that built using the PERN stack.",
-    image: "/platoio.png",
-    github: "https://github.com/hqasmei/platoio",
-    link: "https://platoio.com/register",
+    name: "Reflow",
+    description:
+      "Reflow is an AI assistant that provides personalized feedback for your diary entries. It is built with Next.js and OpenAI API.",
+    image: "/reflow.jpeg",
+    github:
+      "https://github.com/HongjianYu/DubHacks23?tab=readme-ov-file#challenges-and-outcomes",
+    link: "https://devpost.com/software/reflow-bm0tz7",
   },
   {
-    name: "Kator Family Photos",
+    name: "UW Classmates Course Radar",
     description:
-      "Kator Family Photos is a photos and video digitization service in the LA area.",
-    image: "/familyphotos.png",
-    github: "https://github.com/hqasmei/katorfamilyphotos",
-    link: "https://katorfamilyphotos.com/",
+      "Part of a team that built a course evaluation site for UW chinese students, now serving more than 500 students.",
+    image: "/hua.png",
+    github: "https://uwclassmate.com/",
+    link: "https://uwclassmate.com/",
   },
-]
+];
 
 const ProjectsSection = () => {
   return (
@@ -78,12 +80,11 @@ const ProjectsSection = () => {
                 </div>
               </SlideUp>
             </div>
-          )
+          );
         })}
-        
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ProjectsSection
+export default ProjectsSection;

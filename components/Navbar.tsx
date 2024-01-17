@@ -1,15 +1,15 @@
-"use client" // this is a client component
-import React from "react"
-import { useState } from "react"
-import { Link } from "react-scroll/modules"
-import { usePathname } from "next/navigation"
-import { useTheme } from "next-themes"
-import { RiMoonFill, RiSunLine } from "react-icons/ri"
-import { IoMdMenu, IoMdClose } from "react-icons/io"
+"use client"; // this is a client component
+import React from "react";
+import { useState } from "react";
+import { Link } from "react-scroll/modules";
+import { usePathname } from "next/navigation";
+import { useTheme } from "next-themes";
+import { RiMoonFill, RiSunLine } from "react-icons/ri";
+import { IoMdMenu, IoMdClose } from "react-icons/io";
 
 interface NavItem {
-  label: string
-  page: string
+  label: string;
+  page: string;
 }
 
 const NAV_ITEMS: Array<NavItem> = [
@@ -25,21 +25,21 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "Projects",
     page: "projects",
   },
-]
+];
 
 export default function Navbar() {
-  const { systemTheme, theme, setTheme } = useTheme()
-  const currentTheme = theme === "system" ? systemTheme : theme
-  const pathname = usePathname()
-  const [navbar, setNavbar] = useState(false)
+  const { systemTheme, theme, setTheme } = useTheme();
+  const currentTheme = theme === "system" ? systemTheme : theme;
+  const pathname = usePathname();
+  const [navbar, setNavbar] = useState(false);
   return (
     <header className="w-full mx-auto  px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-stone-900 dark:border-b dark:border-stone-600">
       <div className="justify-between md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <Link to="home">
-              <div className="container flex items-center space-x-2">
-                <h2 className="text-2xl font-bold">Hosna Qasmei</h2>
+            <Link to="home" className="hover:bg-gray-100 hover:text-blue-500">
+              <div className="container flex items-center space-x-2 cursor-pointer">
+                <h2 className="text-3xl font-bold">Zilin Fang</h2>
               </div>
             </Link>
             <div className="md:hidden">
@@ -66,7 +66,8 @@ export default function Navbar() {
                     key={idx}
                     to={item.page}
                     className={
-                      "block lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100"
+                      // make font larger
+                      "block lg:inline-block text-neutral-900  hover:text-blue-500 dark:text-neutral-100 hover:dark:text-blue-500 font-bold text-2xl px-2 py-2 rounded-xl cursor-pointer"
                     }
                     activeClass="active"
                     spy={true}
@@ -77,7 +78,7 @@ export default function Navbar() {
                   >
                     {item.label}
                   </Link>
-                )
+                );
               })}
               {currentTheme === "dark" ? (
                 <button
@@ -99,5 +100,5 @@ export default function Navbar() {
         </div>
       </div>
     </header>
-  )
+  );
 }
