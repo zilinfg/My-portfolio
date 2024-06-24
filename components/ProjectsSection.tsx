@@ -6,12 +6,12 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 
 const projects = [
   {
-    name: "Wild Oasis",
+    name: "UW Classmates Course Evaluation Site",
     description:
-      "Wild Oasis is a fullstack hotel management application built using React and Supabase.",
-    image: "/wild-oasis.png",
-    github: "https://github.com/zilinfg/the-wild-oasis",
-    link: "https://wild-oasis-hotel-app-zilin.netlify.app",
+      "Part of a team that built a course evaluation site for more than 500 international students.",
+    image: "/hua.png",
+    github: "https://uwclassmate.com/",
+    link: "https://uwclassmate.com/",
   },
   {
     name: "Reflow",
@@ -23,12 +23,28 @@ const projects = [
     link: "https://devpost.com/software/reflow-bm0tz7",
   },
   {
-    name: "UW Classmates Course Radar",
+    name: "Wild Oasis",
     description:
-      "Part of a team that built a course evaluation site for UW chinese students, now serving more than 500 students.",
-    image: "/hua.png",
-    github: "https://uwclassmate.com/",
-    link: "https://uwclassmate.com/",
+      "Wild Oasis is a fullstack hotel management application built using React and Supabase.",
+    image: "/wild-oasis.png",
+    github: "https://github.com/zilinfg/the-wild-oasis",
+    link: "https://wild-oasis-hotel-app-zilin.netlify.app",
+  },
+  {
+    name: "3D Agar.io Roblox Game",
+    description:
+      "A 3D Agar.io Roblox game built with Lua in Roblox Studio, obtained 1,000+ visits.",
+    image: "/roblox_thumbnail.png",
+    github: "",
+    link: "https://www.roblox.com/games/17503410109/3D-Agar-io",
+  },
+  {
+    name: "CSE 452 Project: Multi-Slot Paxos Algorithm",
+    description:
+      "Built a highly available kv-store using Multi-Slot Paxos Algorithm in Java for CSE 452 Distributed Systems. ",
+    image: "/paxos-diagram.png",
+    github: "",
+    link: "https://www.roblox.com/games/17503410109/3D-Agar-io",
   },
 ];
 
@@ -63,12 +79,13 @@ const ProjectsSection = () => {
                       {project.description}
                     </p>
                     <div className="flex flex-row align-bottom space-x-4">
-                      <Link href={project.github} target="_blank">
+                      {project.github === "" ? null : 
+                      (<Link href={project.github} target="_blank">
                         <BsGithub
                           size={30}
                           className="hover:-translate-y-1 transition-transform cursor-pointer"
                         />
-                      </Link>
+                      </Link>)}
                       <Link href={project.link} target="_blank">
                         <BsArrowUpRightSquare
                           size={30}
