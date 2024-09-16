@@ -7,18 +7,24 @@ import { HiArrowDown } from "react-icons/hi";
 
 const skills = [
   { skill: "Java" },
-  { skill: "JavaScript" },
-  { skill: "TypeScript" },
+  { skill: "Kotlin" },
+  { skill: "Jetpack Compose" },
+  { skill: "Android Framework" },
+  { skill: "JavaScript/TypeScript" },
   { skill: "C/C++" },
   { skill: "Python" },
-  { skill: "React" },
+  { skill: "Docker" },
+  { skill: "AWS" },
+  { skill: "React.js" },
+  { skill: "Django" },
   { skill: "HTML" },
   { skill: "CSS" },
   { skill: "Next.js" },
   { skill: "Tailwind CSS" },
-  { skill: "SQL" },
+  { skill: "SQL/NoSQL" },
   { skill: "Git" },
-  { skill: "GitHub" },
+  { skill: "Machine Learning" },
+  { skill: "NLP" },
 ];
 
 const AboutSection = () => {
@@ -36,12 +42,9 @@ const AboutSection = () => {
               Get to know me!
             </h1>
             <p className="text-lg">
-              Hi, I am Zilin and I am a{" "}
-              <span className="font-bold">{"highly ambitious"}</span>,
-              <span className="font-bold">{" self-motivated"}</span>, and
-              <span className="font-bold">{" driven"}</span> CS undergraduate
-              student at UW.
+             I have extensive experiences in mobile and web application development, as well as a strong foundation in software engineering principles.
             </p>
+            
             <br />
             {/* make font bigger */}
             <p className="text-lg">

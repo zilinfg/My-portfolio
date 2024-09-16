@@ -39,7 +39,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link to="home" className="hover:bg-gray-100 hover:text-blue-500">
               <div className="container flex items-center space-x-2 cursor-pointer">
-                <h2 className="text-3xl font-bold">Zilin Fang</h2>
+                <h2 className="text-3xl font-bold">Dylan Fang</h2>
               </div>
             </Link>
             <div className="md:hidden">

@@ -19,22 +19,22 @@ const HeroSection = () => {
         </div>
         <div className="md:mt-2 md:w-3/5">
           <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl">
-            Hi, I&#39;m Zilin!
+            Hi, I&#39;m Dylan!
           </h1>
           <p className="text-lg mt-4 mb-6 md:text-2xl">
             I&#39;m a{" "}
-            <span className="font-semibold text-teal-600">undergraduate </span>
+            <span className="font-semibold text-teal-600">junior </span>
             at{" "}
             <span className="font-semibold text-blue-600">
               University of Washington
             </span>{" "}
             studying{" "}
             <span className="font-semibold text-yellow-600">
-              Computer Science
+              Computer Science.
             </span>{" "}
-            . I am a highly motivated and driven individual who seeks to{" "}
+             I am a highly motivated and driven individual who seeks to{" "}
             <span className="font-semibold text-red-600">
-              create software!{" "}
+              create impactful software!{" "}
             </span>
           </p>
         </div>

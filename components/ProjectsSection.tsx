@@ -8,7 +8,7 @@ const projects = [
   {
     name: "UW Classmates Course Evaluation Site",
     description:
-      "Part of a team that built a course evaluation site for more than 500 international students.",
+      "Part of a team that built a course evaluation site for 1000+ international students.",
     image: "/hua.png",
     github: "https://uwclassmate.com/",
     link: "https://uwclassmate.com/",
@@ -33,7 +33,7 @@ const projects = [
   {
     name: "3D Agar.io Roblox Game",
     description:
-      "A 3D Agar.io Roblox game built with Lua in Roblox Studio, obtained 1,000+ visits.",
+      "A 3D Agar.io Roblox game built with Lua in Roblox Studio, obtained 100+ visits.",
     image: "/roblox_thumbnail.png",
     github: "",
     link: "https://www.roblox.com/games/17503410109/3D-Agar-io",
