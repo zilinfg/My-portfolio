@@ -14,6 +14,14 @@ const projects = [
     link: "https://uwclassmate.com/",
   },
   {
+    name: "Wild Oasis",
+    description:
+      "Wild Oasis is a fullstack hotel management application built using React and Supabase.",
+    image: "/wild-oasis.png",
+    github: "https://github.com/zilinfg/the-wild-oasis",
+    link: "https://wild-oasis-hotel-app-zilin.netlify.app",
+  },
+  {
     name: "Reflow",
     description:
       "Reflow is an AI assistant that provides personalized feedback for your diary entries. It is built with Next.js and OpenAI API.",
@@ -23,13 +31,15 @@ const projects = [
     link: "https://devpost.com/software/reflow-bm0tz7",
   },
   {
-    name: "Wild Oasis",
+    name: "Enciv Civil-Pursuit",
     description:
-      "Wild Oasis is a fullstack hotel management application built using React and Supabase.",
-    image: "/wild-oasis.png",
-    github: "https://github.com/zilinfg/the-wild-oasis",
-    link: "https://wild-oasis-hotel-app-zilin.netlify.app",
+      "Enciv Civil-Pursuit is an open source web application that facilitates the process of large scale deliberation, and is in the process of revamping the website.",
+    image: "/enciv.png",
+    github:
+      "https://github.com/EnCiv/civil-pursuit",
+    link: "https://github.com/EnCiv/civil-pursuit",
   },
+
   {
     name: "3D Agar.io Roblox Game",
     description:
